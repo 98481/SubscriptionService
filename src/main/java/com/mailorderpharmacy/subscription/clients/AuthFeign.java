@@ -10,7 +10,7 @@ import com.mailorderpharmacy.subscription.entity.TokenValid;
 /**Interface to connect with 
  * authentication service **/
 
-@FeignClient(name = "authapp", url = "http://localhost:8090/authapp")
+@FeignClient(name = "authapp", url = "http://drugmicroservice.ap-south-1.elasticbeanstalk.com/authapp")
 public interface AuthFeign {
 
 	/**
