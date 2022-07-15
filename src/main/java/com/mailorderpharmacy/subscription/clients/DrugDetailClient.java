@@ -12,7 +12,7 @@ import com.mailorderpharmacy.subscription.entity.DrugDetails;
 /** Interface to connect 
  * with drug service */
 
-@FeignClient(url="http://localhost:8081/drugdetailapp",name="drugdetailapp")
+@FeignClient(url="http://Drugmicroservicemain.ap-south-1.elasticbeanstalk.com/drugdetailapp",name="drugdetailapp")
 public interface DrugDetailClient {
 
 	@GetMapping("/searchDrugsByName/{name}")
