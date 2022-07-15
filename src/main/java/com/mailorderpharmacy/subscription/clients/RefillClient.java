@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 /** Interface to connect 
  * with refill service */
 
-@FeignClient(url = "http://localhost:8454/refillappdb", name = "refillapp")
+@FeignClient(url = "http://refillmicroservice/refillappdb", name = "refillapp")
 public interface RefillClient {
 
 	@GetMapping("/getRefillPaymentDues/{sub_id}")
